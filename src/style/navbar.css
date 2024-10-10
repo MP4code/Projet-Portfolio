@@ -1,0 +1,39 @@
+/* src/Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding-left: 70%;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: "Playfair", serif;
+  font-weight: 800;
+  font-size: 20px;
+
+}
+
+.navbar.scroll {
+  background-color: rgba(242, 214, 206, 0.5);
+  padding: 10px;
+}
+
+.navbar h1 {
+  color:black;
+}
