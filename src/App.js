@@ -3,21 +3,35 @@ import React from 'react';
 import Navbar from './Navbar';
 import './style/index.css';
 import monImage from './style/img/home.png'
+import AboutMe from './component/AboutMe';
 function App() {
     return (
         <div className="App">
             <Navbar />
             <section id="home" className="section">
+                <h1 className='name'>Marina Philogène</h1>
                 <div className='backgroundDecor'></div>
+                <div className='homeTitleDeco'>
+                    <ul>
+                        <li> PORTFOLIO</li>
+                        <li> PORTFOLIO</li>
+                        <li> PORTFOLIO</li>
+                        <li> PORTFOLIO</li>
+                    </ul>
+                </div>
                 <img className="homeImage" src={monImage} alt='tasse de café' />
                 <h2 className='homeTitle'>PORTFOLIO</h2>
 
-                <div className='helloAutocollant'>
+
+                <div className='helloHome autocollant'>
                     Hello
+                </div>
+                <div className='scroll autocollant'>
+                    scroll
                 </div>
             </section>
             <section id="about" className="section">
-                <h2>A propos</h2>
+                <AboutMe />
             </section>
             <section id="education" className="section">
                 <h2>Education</h2>
