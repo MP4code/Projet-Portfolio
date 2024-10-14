@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import './style/index.css';
 import monImage from './style/img/home.png'
 import AboutMe from './component/AboutMe';
+import Education from './component/Education';
 function App() {
     return (
         <div className="App">
@@ -26,7 +27,7 @@ function App() {
                 <div className='helloHome autocollant'>
                     Hello
                 </div>
-                <div className='scroll autocollant'>
+                <div className='scrollAutocollant autocollant'>
                     scroll
                 </div>
             </section>
@@ -34,7 +35,7 @@ function App() {
                 <AboutMe />
             </section>
             <section id="education" className="section">
-                <h2>Education</h2>
+                <Education />
             </section>
             <section id="projets" className="section">
                 <h2>Mes Projets</h2>
