@@ -26,15 +26,18 @@
 */
 body {
     margin: 0 auto;
-}
 
+}
+*{
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 .section {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2rem;
     color: black;
+    border: 2px solid red;
 }
 
 .name {
@@ -57,11 +60,16 @@ h2 {
 /**/
 #home {
     background-color: var(--primary-color);
-    flex-direction: column;
-    box-sizing: border-box;
-    border: 2px solid red;
-}
 
+    
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
 .homeTitle {
     color: var(--secondary-color);
     font-size: 100px;
@@ -93,8 +101,8 @@ h2 {
 }
 
 .backgroundDecor {
-    position: relative;
-    top: 34%;
+    position: absolute;
+    top: 70%;
     width: 100%;
     height: 300px;
     background-color: var(--secondary-color);
@@ -127,31 +135,36 @@ h2 {
 }
 
 /* About me */
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
 
-
-.btnLinkedin {
-    background-color: var(--accent-color);
-    border-radius: 100px;
-    box-shadow: 0px 4px 10px var(--accent-color2);
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 16px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-top: 5%;
 }
 
-.btnLinkedin:hover {
-    box-shadow: 0px 4px 10px white;
-    transform: scale(1.05) rotate(-1deg);
+.button {
+    display: inline-block; 
+    padding: 10px 30px; 
+    margin: 10px;
+    font-size: 20px;
+    color: white; 
+    background-color: #333; 
+    border: none;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet de transition */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.button:hover {
+    background-color: var(--accent-color); 
+    color: white;
+    transform: scale(1.05);
 }
 
 .aboutMeContainer {
@@ -182,56 +195,191 @@ h2 {
 
 .aboutmeText {
     margin: 0 10%;
-    font-size: 1.5rem;
+    font-size: 22px;
     text-align: justify;
 }
 
 .aboutMecontentImg {
     display: flex;
     width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutmeImg {
     width: 100%;
-    height: 1000px;
+    height: 800px;
     object-fit: cover;
 }
 
 /**/
-/* Education */
-
-.educationContainer{
-    display: flex;
-    padding: 0 15%;
-    background-color: var(--primary-color);
+/* Compétences */
+.logo_conpetences{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    width: 100px;
 }
-.educationContent {
-    width: 49%;
+.formationContainer{
+    width: 100%;
+   background-color: var(--background-color);
+   color: var(--primary-color);
+   padding: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.formationContainer h2{
+    margin: 0;
+}
+.formationContainer p{
+    margin: 0;
+    font-size: 22px;
+}
+
+.formationContainer {
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 1em;
+  margin-bottom: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.competencesContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  margin: 0 20%;
+}
+
+.competenceItem {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.competenceItem:hover {
+  transform: scale(1.05);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.competencesTitle{
+    font-size: 22px;
+}
+
+
+
+/**/
+/*Projets*/
+.projetsContainer{
+    padding: 0 10%;
+     position: absolute;
+}
+.projetsCard{
+  background-color: #333;
+    color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 30px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-.educationContentImg{
-    display: flex;
-    width: 49%;
+.projetsCard:hover{
+    background-color: var(--accent-color);
+    
 }
-.educationImg{
-    width: 100%;
-    height: 1000px;
+.projetsContent_img{
     object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+   box-shadow: rgba(255, 255, 255) 0px 3px 8px;
+}
+.projetsTitle{
+   font-family: "Gochi Hand", cursive;
+    font-style: normal;
+    font-size: 22px;
+    margin: 10px 0
+}
+
+.projetsContent{
+width: 35%;
+padding: 20px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.projetsContentInfos{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+.description{
+    padding: 1em;
+text-align: justify;
+    font-size: 20px;
+}
+.description p{
+     margin: 0;
+}
+
+.badgeContainer{
+
+    padding: 10px;
+   display: flex;
+   align-items: center;
+
+}
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 5px;
+  background-color: var(--accent-color2);
+  color: #333;
+  border-radius: 20px; 
+  font-size: 16px;
+  font-weight: bold; 
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
 }
 
 /**/
-
-#services {
-    background-color: #e74c3c;
+.decotest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#contact {
-    background-color: #9b59b6;
+.decotest ul {
+    margin: 0;
+    list-style-type: none;
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+    color: var(--background-color);
+
 }
-
-
-/**/

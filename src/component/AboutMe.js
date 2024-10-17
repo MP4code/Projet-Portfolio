@@ -1,10 +1,18 @@
 import React from 'react'
 import aboutmeImg from "../style/img/dried-pink-peony-flower-clear-vase-reflected-mirror.jpg";
-import "../style/index.css"
+import "../style/index.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+
 const AboutMe = () => {
     const redirectTo = () => {
         window.open('https://www.linkedin.com/in/marina-philogene/', '_blank');
     };
+    const redirectToCV = () => {
+        window.open('/cvMarinaPhilogene2024.pdf', '_blank');
+    };
+
     return (
         <div>
             <div className='aboutMeContainer'>
@@ -22,7 +30,18 @@ const AboutMe = () => {
                             jamais, tant il y a à explorer dans ce domaine.
                         </p>
                     </div>
-                    <button onClick={redirectTo} className="btnLinkedin" type="button">linkedin.com/in/marina-philogene/</button>
+                    <div className='buttonContainer'>
+
+                        <button onClick={redirectTo} className="button" type="button">
+                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            linkedin.com
+                        </button>
+
+                        <button onClick={redirectToCV} className="button" type="button">
+                            <FontAwesomeIcon icon={faFile} />
+                            Voir mon cv
+                        </button>
+                    </div>
                 </div>
                 <div className='aboutMecontentImg'>
                     <img className="aboutmeImg" src={aboutmeImg} alt='Mirroir et un vase à fleur' />

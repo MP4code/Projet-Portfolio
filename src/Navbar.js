@@ -23,30 +23,32 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar ${scroll ? 'scroll' : ''}`}>
-            <ul>
-                <li>
-                    <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
-                        Accueil
-                    </Link>
-                </li>
-                <li>
-                    <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
-                        A Propos
-                    </Link>
-                </li>
-                <li>
-                    <Link to="education" spy={true} smooth={true} offset={-70} duration={500}>
-                        Education
-                    </Link>
-                </li>
-                <li>
-                    <Link to="projets" spy={true} smooth={true} offset={-70} duration={500}>
-                        Mes Projets
-                    </Link>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <nav className={`navbar ${scroll ? 'scroll' : ''}`}>
+                <ul>
+                    <li>
+                        <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
+                            Accueil
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+                            A Propos
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="competences" spy={true} smooth={true} offset={-70} duration={500}>
+                            Mes compétences
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="projets" spy={true} smooth={true} offset={-70} duration={500}>
+                            Mes Projets
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 
