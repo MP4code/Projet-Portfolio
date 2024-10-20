@@ -37,18 +37,10 @@ body {
     height: 100vh;
     font-size: 2rem;
     color: black;
-    border: 2px solid red;
 }
-
-.name {
-    font-family: "Gochi Hand", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    position: absolute;
-    top: 0;
-    left: 5%;
-
+.monLogo{
+    margin: 0 5%;
+    width: 300px;
 }
 
 h2 {
@@ -220,10 +212,9 @@ h2 {
     width: 100px;
 }
 .formationContainer{
-    width: 100%;
    background-color: var(--background-color);
    color: var(--primary-color);
-   padding: 40px;
+   padding: 30px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -235,19 +226,6 @@ h2 {
 .formationContainer p{
     margin: 0;
     font-size: 22px;
-}
-
-.formationContainer {
-  width: 100%;
-  background-color: var(--background-color);
-  color: var(--primary-color);
-  padding: 1em;
-  margin-bottom: 5%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
 .competencesContainer {
@@ -298,9 +276,11 @@ h2 {
     padding: 2%;
     border-radius: 30px;
    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .projetsCard:hover{
     background-color: var(--accent-color);
+    transform: scale(1.05);
     
 }
 .projetsContent_img{
@@ -313,7 +293,7 @@ h2 {
 .projetsTitle{
    font-family: "Gochi Hand", cursive;
     font-style: normal;
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px 0
 }
 
@@ -367,13 +347,13 @@ text-align: justify;
 }
 
 /**/
-.decotest{
+.decoProjets{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.decotest ul {
+.decoProjets ul {
     margin: 0;
     list-style-type: none;
     font-family: "Gochi Hand", cursive;
@@ -381,5 +361,118 @@ text-align: justify;
     font-style: normal;
     font-size: 200px;
     color: var(--background-color);
+
+}
+
+/**/
+/**Footer**/
+.decoFooter{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 150px;
+}
+.footerTitle{
+    color: var(--background-color);
+    font-family: "Gochi Hand", cursive;
+    font-style: normal;
+    font-size: 40px;
+}
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.faIcon{
+    color: var(--background-color);
+}
+
+/*** Responsive ***/
+@media only screen and (max-width: 768px) {
+    .monLogo{
+    margin: 15% 15%;
+    width: 200px;
+}
+.homeTitleDeco {
+    top: 15%;
+    left: 0;
+}
+.homeTitle{
+    top: 12%;
+    left: 26%;
+}
+
+.autocollant{
+    display: none;
+}
+
+/*aboutme*/
+
+.aboutMecontentImg{
+ display: none;
+}
+.aboutMeContainer{
+    margin-top: 10%;
+}
+.aboutMecontent{
+     border : 2px solid var(--accent-color);
+     width: 100%;
+}
+.formationContainer h2 {
+   font-size: 24px;
+}
+
+.competencesContainer{
+   grid-template-columns: repeat(2, 1fr);
+}
+
+/*Projets*/
+.decoProjets{
+   margin: 10% 0;
+}
+
+/*footer*/
+.decoFooter{
+    margin-top: 6%;
+}
+
+.footerContainer{
+    flex-direction: column;
+}
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .autocollant{
+    display: none;
+}
+
+    /*aboutme*/
+.aboutMeContainer{
+    margin-top: 10%;
+    flex-direction: column;
+}
+.aboutMecontent{
+    width: 100%;
+    border : 2px solid var(--accent-color);
+}
+.aboutMecontentImg{
+ display: none;
+}
+
+
+/*footer*/
+.footerContainer{
+    flex-direction: column;
+}
 
 }

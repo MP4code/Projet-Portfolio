@@ -1,10 +1,12 @@
 // src/Navbar.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import "./style/navbar.css"
+import "./style/navbar.css";
+
 
 const Navbar = () => {
     const [scroll, setScroll] = useState(false);
+
 
     // Gérer la modification de la classe au scroll
     useEffect(() => {
@@ -24,7 +26,9 @@ const Navbar = () => {
 
     return (
         <header>
+
             <nav className={`navbar ${scroll ? 'scroll' : ''}`}>
+
                 <ul>
                     <li>
                         <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>

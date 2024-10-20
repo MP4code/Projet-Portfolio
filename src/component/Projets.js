@@ -3,6 +3,7 @@ import "../style/index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Realisations from "./Realisations";
+
 const Projets = () => {
 
 
@@ -31,8 +32,8 @@ const Projets = () => {
                     </div>
                 ))}
             </div>
-            <div className="decotest">
-                <div className='decotest'>
+            <div className="decoProjets">
+                <div className='decoProjets'>
                     <ul>
                         <li> PROJETS</li>
                         <li> PROJETS</li>
@@ -40,8 +41,10 @@ const Projets = () => {
                         <li> PROJETS</li>
                     </ul>
                 </div>
+
             </div>
-        </div>
+
+        </div >
     )
 }
 

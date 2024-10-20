@@ -1,6 +1,7 @@
 import React from 'react';
 import monImage from './style/img/home.png';
 import './style/index.css';
+import monLogo from "./style/img/logo.png";
 import Animate from "react-smooth";
 const Home = () => {
     const steps = [{
@@ -22,7 +23,7 @@ const Home = () => {
     }];
     return (
         <div>
-            <h1 className='name'>Marina Philogène</h1>
+            <img src={monLogo} alt='logo' className='monLogo' />
             <div className='homeContainer'>
                 <div className='backgroundDecor'></div>
                 <div className='homeTitleDeco'>

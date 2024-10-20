@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import './style/index.css';
 import AboutMe from './component/AboutMe';
 import Competences from './component/Competences';
-import Animate from "react-smooth";
 import Home from './Home';
 import Projets from './component/Projets';
 import Footer from './Footer';
