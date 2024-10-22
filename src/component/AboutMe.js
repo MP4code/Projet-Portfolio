@@ -22,19 +22,19 @@ const AboutMe = () => {
                 <div className='aboutMecontent'>
                     <h2 className='aboutMeTitle'>Salut,</h2>
                     <h3>Moi c'est Marina!</h3>
-                    <Animate from="0" to="1" attributeName="opacity">
-                        <div className='aboutmeText' >
-                            <p> J'ai tout juste 29 ans. Actuellement, je vis à Blagnac.
-                                Je me passionne pour de nombreuses choses, on peux dire que je suis une personne polyvalente.
-                                Je puise mon inspiration dans les choses et les personnes que j'apprécie pour mes créations.
-                                Je suis curieuse et j'aime découvrir de nouvelles expériences. Bien que parfois timide, je
-                                compense par mon humour.
-                                Le développement web me fascine, et j'adore les designs que l'on peut créer. Chaque jour,
-                                je découvre de nouvelles choses, et je suis ravie de savoir que l'apprentissage ne cessera
-                                jamais, tant il y a à explorer dans ce domaine.
-                            </p>
-                        </div>
-                    </Animate>
+
+                    <div className='aboutmeText' >
+                        <p> J'ai tout juste 29 ans. Actuellement, je vis à Blagnac.
+                            Je me passionne pour de nombreuses choses, on peux dire que je suis une personne polyvalente.
+                            Je puise mon inspiration dans les choses et les personnes que j'apprécie pour mes créations.
+                            Je suis curieuse et j'aime découvrir de nouvelles expériences. Bien que parfois timide, je
+                            compense par mon humour.
+                            Le développement web me fascine, et j'adore les designs que l'on peut créer. Chaque jour,
+                            je découvre de nouvelles choses, et je suis ravie de savoir que l'apprentissage ne cessera
+                            jamais, tant il y a à explorer dans ce domaine.
+                        </p>
+                    </div>
+
                     <div className='buttonContainer'>
 
                         <button onClick={redirectTo} className="button" type="button">
