@@ -1,6 +1,5 @@
 import React from 'react'
 import "../style/index.css";
-import logoOpen from "../style/img/openclassrooms1.png"
 const Competences = () => {
     const mesCompetences = [
         { id: 1, title: 'HTML' },

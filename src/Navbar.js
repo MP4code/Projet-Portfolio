@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import "./style/navbar.css";
 import {
-    MenuFoldOutlined,
     MenuUnfoldOutlined,
 
 } from '@ant-design/icons';
 import { Drawer } from 'antd';
-import { Button } from 'antd/es/radio';
+import 'antd/dist/reset.css';
+import { gray, grey } from '@ant-design/colors';
+
 
 const Navbar = () => {
     const [scroll, setScroll] = useState(false);
@@ -33,34 +34,35 @@ const Navbar = () => {
 
     return (
         <header>
+
             <Drawer
-                title="Basic Drawer"
                 placement="left"
                 closable={true}
                 onClose={() => setCollapsed(false)}
                 open={collapsed}
                 key="left"
+                style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)', }}
             >
                 <nav className={`${scroll ? 'scroll' : ''}`}>
-                    <Button type="primary">Primary Button</Button>
-                    <ul>
-                        <li>
-                            <Link to="home" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)}>
+
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        <li style={{ padding: '16px', borderBottom: '1px solid #f0f0f0' }}>
+                            <Link to="home" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)} style={{ color: "black", fontSize: "20px" }}>
                                 Accueil
                             </Link>
                         </li>
-                        <li>
-                            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)}>
+                        <li style={{ padding: '16px', borderBottom: '1px solid #f0f0f0' }}>
+                            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)} style={{ color: "black", fontSize: "20px" }}>
                                 A Propos
                             </Link>
                         </li>
-                        <li>
-                            <Link to="competences" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)}>
+                        <li style={{ padding: '16px', borderBottom: '1px solid #f0f0f0' }}>
+                            <Link to="competences" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)} style={{ color: "black", fontSize: "20px" }}>
                                 Mes compétences
                             </Link>
                         </li>
-                        <li>
-                            <Link to="projets" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)}>
+                        <li style={{ padding: '16px', borderBottom: '1px solid #f0f0f0' }}>
+                            <Link to="projets" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setCollapsed(false)} style={{ color: "black", fontSize: "20px" }}>
                                 Mes Projets
                             </Link>
                         </li>

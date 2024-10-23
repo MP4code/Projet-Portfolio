@@ -8,8 +8,11 @@ const Projets = () => {
 
 
     return (
-        <div>
-            <div className='projetsContainer'>
+
+        <div className='projetsContainer'>
+            <h2 className='titleHidden'>Mes projets</h2>
+            <div className='projetsCard_container'>
+
                 {Realisations.map((projet) => (
                     <div className='projetsCard' key={projet.id}>
                         <div className='projetsContent'>
@@ -31,20 +34,18 @@ const Projets = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="decoProjets">
-                <div className='decoProjets'>
-                    <ul>
-                        <li> PROJETS</li>
-                        <li> PROJETS</li>
-                        <li> PROJETS</li>
-                        <li> PROJETS</li>
-                    </ul>
-                </div>
 
             </div>
+            <div className='decoProjets'>
+                <ul>
+                    <li> PROJETS</li>
+                    <li> PROJETS</li>
+                    <li> PROJETS</li>
+                    <li> PROJETS</li>
+                </ul>
+            </div>
+        </div>
 
-        </div >
     )
 }
 
