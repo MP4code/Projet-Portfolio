@@ -24,8 +24,8 @@ const Home = () => {
     return (
         <div>
             <img src={monLogo} alt='logo' className='monLogo' />
+            <div className='backgroundDecor'></div>
             <div className='homeContainer'>
-                <div className='backgroundDecor'></div>
                 <div className='homeTitleDeco'>
                     <ul>
                         <li> PORTFOLIO</li>
@@ -34,10 +34,9 @@ const Home = () => {
                         <li> PORTFOLIO</li>
                     </ul>
                 </div>
+
                 <img className="homeImage" src={monImage} alt='tasse de café' />
                 <h2 className='homeTitle'>PORTFOLIO</h2>
-
-
                 <div className='helloHome autocollant'>
                     Hello
                 </div>
@@ -48,6 +47,7 @@ const Home = () => {
                     </div>
                 </Animate>
             </div>
+
         </div>
     )
 }
