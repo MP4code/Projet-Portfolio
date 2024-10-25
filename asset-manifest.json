@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.74c6fe23.css",
-    "main.js": "/static/js/main.9e3a323b.js",
-    "static/js/453.c5269848.chunk.js": "/static/js/453.c5269848.chunk.js",
-    "static/media/dried-pink-peony-flower-clear-vase-reflected-mirror.jpg": "/static/media/dried-pink-peony-flower-clear-vase-reflected-mirror.12118e792573ab365b0c.jpg",
-    "static/media/fondFormation.png": "/static/media/fondFormation.8981c425e22ca3a13d41.png",
-    "static/media/nina-carducci.PNG": "/static/media/nina-carducci.0c949bf0d49692fac989.PNG",
-    "static/media/argent.PNG": "/static/media/argent.17e07db921cb8312ce6a.PNG",
-    "static/media/home.png": "/static/media/home.957c2865824aaeefac7f.png",
-    "static/media/kasa.PNG": "/static/media/kasa.4b4bfd884944d2e58d7b.PNG",
-    "static/media/logo.png": "/static/media/logo.c39cc06a7d074a280e65.png",
-    "index.html": "/index.html",
-    "main.74c6fe23.css.map": "/static/css/main.74c6fe23.css.map",
-    "main.9e3a323b.js.map": "/static/js/main.9e3a323b.js.map",
-    "453.c5269848.chunk.js.map": "/static/js/453.c5269848.chunk.js.map"
+    "main.css": "/Projet-Portfolio/static/css/main.ed5f5690.css",
+    "main.js": "/Projet-Portfolio/static/js/main.459fbb36.js",
+    "static/js/453.c5269848.chunk.js": "/Projet-Portfolio/static/js/453.c5269848.chunk.js",
+    "static/media/dried-pink-peony-flower-clear-vase-reflected-mirror.jpg": "/Projet-Portfolio/static/media/dried-pink-peony-flower-clear-vase-reflected-mirror.12118e792573ab365b0c.jpg",
+    "static/media/fondFormation.png": "/Projet-Portfolio/static/media/fondFormation.8981c425e22ca3a13d41.png",
+    "static/media/nina-carducci.PNG": "/Projet-Portfolio/static/media/nina-carducci.0c949bf0d49692fac989.PNG",
+    "static/media/argent.PNG": "/Projet-Portfolio/static/media/argent.17e07db921cb8312ce6a.PNG",
+    "static/media/home.png": "/Projet-Portfolio/static/media/home.957c2865824aaeefac7f.png",
+    "static/media/kasa.PNG": "/Projet-Portfolio/static/media/kasa.4b4bfd884944d2e58d7b.PNG",
+    "static/media/logo.png": "/Projet-Portfolio/static/media/logo.c39cc06a7d074a280e65.png",
+    "index.html": "/Projet-Portfolio/index.html",
+    "main.ed5f5690.css.map": "/Projet-Portfolio/static/css/main.ed5f5690.css.map",
+    "main.459fbb36.js.map": "/Projet-Portfolio/static/js/main.459fbb36.js.map",
+    "453.c5269848.chunk.js.map": "/Projet-Portfolio/static/js/453.c5269848.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74c6fe23.css",
-    "static/js/main.9e3a323b.js"
+    "static/css/main.ed5f5690.css",
+    "static/js/main.459fbb36.js"
   ]
 }
