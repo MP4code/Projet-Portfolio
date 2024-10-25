@@ -9,6 +9,7 @@ import Projets from './component/Projets';
 import Footer from './Footer';
 import { ConfigProvider } from 'antd';
 
+
 function App() {
     return (
         <ConfigProvider theme={{ token: { colorPrimary: 'red' } }}>

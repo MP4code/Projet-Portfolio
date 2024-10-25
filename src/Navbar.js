@@ -40,7 +40,7 @@ const Navbar = () => {
                 onClose={() => setCollapsed(false)}
                 open={collapsed}
                 key="left"
-                style={{ backgroundColor: 'rgba(255, 255, 255, 0.6)', }}
+                style={{ backgroundColor: 'rgba(255, 255, 255, 0.6)' }}
             >
                 <nav className={`${scroll ? 'scroll' : ''}`}>
 
