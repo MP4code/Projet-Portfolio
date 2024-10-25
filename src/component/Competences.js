@@ -1,5 +1,6 @@
 import React from 'react'
 import "../style/index.css";
+
 const Competences = () => {
     const mesCompetences = [
         { id: 1, title: 'HTML' },
