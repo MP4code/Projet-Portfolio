@@ -4,7 +4,8 @@ import "../style/index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
-import Animate from "react-smooth";
+import { motion } from "framer-motion";
+
 
 
 const AboutMe = () => {
@@ -20,6 +21,7 @@ const AboutMe = () => {
         <div>
             <div className='aboutMeContainer'>
                 <div className='aboutMecontent'>
+
                     <h2 className='aboutMeTitle'>Salut,</h2>
                     <h3>Moi c'est Marina!</h3>
 
@@ -49,7 +51,13 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className='aboutMecontentImg'>
-                    <img className="aboutmeImg" src={aboutmeImg} alt='Mirroir et un vase à fleur' />
+                    <motion.img
+                        src={aboutmeImg}
+                        alt='Mirroir et un vase à fleur'
+                        whileHover={{ scale: 0.8, borderRadius: "50%" }}
+                        transition={{ scale: { duration: 0.5 }, borderRadius: { duration: 0.8 } }}
+                        className="aboutmeImg"
+                    />
                 </div>
 
             </div>
