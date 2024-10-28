@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Projet-Portfolio/static/css/main.15385c1e.css",
-    "main.js": "/Projet-Portfolio/static/js/main.459fbb36.js",
+    "main.js": "/Projet-Portfolio/static/js/main.dd1fc4de.js",
     "static/js/453.c5269848.chunk.js": "/Projet-Portfolio/static/js/453.c5269848.chunk.js",
     "static/media/dried-pink-peony-flower-clear-vase-reflected-mirror.jpg": "/Projet-Portfolio/static/media/dried-pink-peony-flower-clear-vase-reflected-mirror.12118e792573ab365b0c.jpg",
     "static/media/fondFormation.png": "/Projet-Portfolio/static/media/fondFormation.8981c425e22ca3a13d41.png",
@@ -12,11 +12,11 @@
     "static/media/logo.png": "/Projet-Portfolio/static/media/logo.c39cc06a7d074a280e65.png",
     "index.html": "/Projet-Portfolio/index.html",
     "main.15385c1e.css.map": "/Projet-Portfolio/static/css/main.15385c1e.css.map",
-    "main.459fbb36.js.map": "/Projet-Portfolio/static/js/main.459fbb36.js.map",
+    "main.dd1fc4de.js.map": "/Projet-Portfolio/static/js/main.dd1fc4de.js.map",
     "453.c5269848.chunk.js.map": "/Projet-Portfolio/static/js/453.c5269848.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15385c1e.css",
-    "static/js/main.459fbb36.js"
+    "static/js/main.dd1fc4de.js"
   ]
 }
