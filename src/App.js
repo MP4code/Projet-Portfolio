@@ -1,12 +1,12 @@
 
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from './component/Navbar';
 import './style/index.css';
 import AboutMe from './component/AboutMe';
 import Competences from './component/Competences';
-import Home from './Home';
+import Home from './component/Home';
 import Projets from './component/Projets';
-import Footer from './Footer';
+import Footer from './component/Footer';
 import { ConfigProvider } from 'antd';
 
 

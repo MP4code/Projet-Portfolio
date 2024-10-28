@@ -1,7 +1,7 @@
 // src/Navbar.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import "./style/navbar.css";
+import "../style/navbar.css";
 import {
     MenuUnfoldOutlined,
 

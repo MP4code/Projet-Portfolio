@@ -1,7 +1,7 @@
 import React from 'react';
-import monImage from './style/img/home.png';
-import './style/index.css';
-import monLogo from "./style/img/logo.png";
+import monImage from '../style/img/home.png';
+import '../style/index.css';
+import monLogo from "../style/img/logo.png";
 import Animate from "react-smooth";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style/index.css"
+import "../style/index.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
